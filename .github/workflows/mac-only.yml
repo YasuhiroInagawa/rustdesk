@@ -2,6 +2,9 @@ name: Build macOS only (aarch64)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [jis-keyboard-type]
+    paths: [".github/workflows/mac-only.yml"]
 
 # NOTE: F-Droid builder script 'flutter/build_fdroid.sh' reads environment
 # variables from this workflow!
